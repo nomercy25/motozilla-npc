@@ -1,114 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/main.css" rel="stylesheet" />
-     <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
-        rel="stylesheet" />
-    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
-    <title>MotoZilla - Інтернет-магазин Мотозапчастин для Китайських мопедів, Японських скутерів й Радянських мотоциклів
-    </title>
-  </head>
-  <body class="bg-[#464646]/25">
-    <form method="post" id="form" class="px-[15px] container flex flex-col max-w-2xl font-sans mx-auto mt-[20px]">
-     <div class="form-block flex flex-col bg-white backdrop-blur-xl mx-auto mt-[20px] rounded-lg shadow-2xl w-full pb-[50px] mb-[50px]">
-      <a class="logo animate-pulse flex justify-center items-center pt-[25px]" href="https://motozilla.com.ua/"><img 
-        class="w-[48px] h-[48px]" src="img/favicon.svg" alt=""><span class="ml-[10px] text-[28px]">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+  <title>MotoZilla - Інтернет-магазин Мотозапчастин для Китайських мопедів, Японських скутерів й Радянських мотоциклів
+  </title>
+</head>
+
+<body class="bg-[#464646]/25">
+  <form method="post" id="form" class="px-[15px] container flex flex-col max-w-2xl font-sans mx-auto mt-[20px]">
+    <div
+      class="form-block flex flex-col bg-white backdrop-blur-xl mx-auto mt-[20px] rounded-lg shadow-2xl w-full pb-[50px] mb-[50px]">
+      <a class="logo animate-pulse flex justify-center items-center pt-[25px]" href="https://motozilla.com.ua/"><img
+          class="w-[48px] h-[48px]" src="img/favicon.svg" alt=""><span class="ml-[10px] text-[28px]">
           MotoZilla</span></a>
-      <div class="flex justify-center items-center mt-[20px] text-[28px]">Ваше імʼя</div>  
-        <input type="text" name="name" required autofocus autocomplete="off"  minlength="2" maxlength="20" 
-          title="Як до Вас звертатись?" class="mx-auto mt-[20px] h-[40px] w-[275px] pl-[10px] rounded-md 
-          placeholder:text-white text-white bg-[#000]/25 focus:rounded-md text-[20px] 
-          placeholder:text-[20px]" placeholder="Введіть імʼя"/>
-            <hr class="mt-[20px]">
-            <div class="flex justify-center items-center mt-[20px] text-[28px]">Ваш E-Mail</div>
-            <h2 class="flex justify-center items-center mt-[20px] text-[28px]"></h2>
-            
-        <input type="text" name="email" placeholder="Ваш E-Mail" required autocomplete="off" maxlength="40"
-          title="Ми напишемо на цю пошту" class=" mx-auto w-[275px] h-[40px] pl-[10px] rounded-md
-           placeholder:text-white text-white bg-[#000]/25 focus:rounded-md text-[20px]"
-          placeholder="Введіть E-Mail"/>
-          <hr class="mt-[20px]">
-          <div class="flex justify-center items-center mt-[20px] text-[28px]">Ваш телефон</div>
-        <input type="text" name="phone" placeholder="+380" oninput="updatePhoneNumber(this)" required autocomplete="off" minlength="10" maxlength="13"
-          title="Ми зателефонуємо за цим номером" class=" mx-auto mt-[20px] w-[275px] h-[40px] pl-[10px] rounded-md placeholder:text-white text-white bg-[#000]/25 focus:rounded-md text-[20px] placeholder:text-[20px]"/>
-          <hr class="mt-[20px]">
-          <div class="question text-[26px] mt-[20px] block text-center placeholder:text-[20px]  px-[15px]">Яка ймовірність того, що Ви
-            порекомендуєте нас друзям або колегам?</div>
-            <p class="flex flex-col items-center text-[20px] text-red-500 mt-[40px]">Оцініть від 1 до 10</p>
-              <div class="rate-row flex flex-col lg:flex-row items-center lg:justify-between text-[22px] lg:text-[18px] mt-[40px] px-[30px]">
-              <p class="">1 - не рекомендую</p>
-              <p class="mt-[5px] lg:mt-[0px]">10 - точно порекомендую</p>
-              </div>
-                   <!--row radio-->
-                   <div class="block element-animation mt-[20px] w-full px-[30px]">
-            <div class="flex justify-between">
-            <div class="radio-item flex flex-col items-center">
+
+      <hr class="mt-[20px]">
+      <div class="question text-[26px] mt-[20px] block text-center placeholder:text-[20px]  px-[15px]">Яка ймовірність
+        того, що Ви
+        порекомендуєте нас друзям або колегам?</div>
+      <p class="flex flex-col items-center text-[20px] text-red-500 mt-[40px]">Оцініть від 1 до 10</p>
+      <div
+        class="rate-row flex flex-col lg:flex-row items-center lg:justify-between text-[22px] lg:text-[18px] mt-[40px] px-[30px]">
+        <p class="">1 - не рекомендую</p>
+        <p class="mt-[5px] lg:mt-[0px]">10 - точно порекомендую</p>
+      </div>
+      <!--row radio-->
+      <div class="block element-animation mt-[20px] w-full px-[30px]">
+        <div class="flex justify-between">
+          <div class="radio-item flex flex-col items-center">
             <label for="radio1">1</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio1" value="1" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio2">2</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio2" value="2" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio3">3</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio3" value="3" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio4">4</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio4" value="4" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio5">5</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio5" value="5" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio6">6</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio6" value="6" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio7">7</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio7" value="7" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio8">8</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio8" value="8" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio9">9</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio9" value="9" />
-            </div>
-            <div class="radio-item flex flex-col items-center">
+          </div>
+          <div class="radio-item flex flex-col items-center">
             <label for="radio10">10</label>
             <input type="radio" class="w-[20px] h-[20px] cursor-pointer" name="question" id="radio10" value="10" />
-            </div>
-            
-            </div>
           </div>
-        <!---->
-              <div class="mt-[20px] px-[30px] text-[24px] lg:text-[22px] text-center text-red-500">
-                <sub>* Якщо оцінка менше 7 - напишіть, що ми могли б покращити для Вас</sub></div>
-                <div class="comment-block flex justify-center px-[30px]">
-                <textarea
-          name="message"
-          maxlength="100"
-          id="message"
-          cols="25"
-          rows="4"
-          placeholder="Ваш коментар"
-          title="" class="element-animation mx-auto text-center bg-[#000]/25 outline-black mt-[30px] rounded-md placeholder:text-white text-[20px]  text-white px-[15px] py-[15px]"></textarea>
-          </div>
-        <div class="check-row flex justify-center items-center mt-[20px] px-[30px]">
-        <input type="checkbox" name="rule" id="rule" class="w-[30px] h-[30px] lg:w-[25px] lg:h-[25px]" value="Згоден / Згодна" required />
-        <label for="rule" class="ml-[10px] text-[20px] lg:text-[24px]">Згодні на обробку даних</label>
+
         </div>
-        <!--submit-->
-        <input type="submit" value="Надіслати" class="active:cursor-wait animate-bounce border block w-[150px] h-[40px] text-[20px] mx-auto mt-[30px] hover:cursor-pointer hover:bg-[#000]/25 hover:text-white rounded-md" />
       </div>
-    </form>
-    <script src="js/main.js"></script>
-    <script src="js/animation.js"></script>
-  </body>
+      <!---->
+      <div class="mt-[20px] px-[30px] text-[24px] lg:text-[22px] text-center text-red-500">
+        <sub>* Якщо оцінка менше 7 - напишіть, що ми могли б покращити для Вас</sub>
+      </div>
+      <div class="comment-block flex justify-center px-[30px]">
+        <textarea name="message" maxlength="100" id="message" cols="25" rows="4" placeholder="Ваш коментар" title=""
+          class="element-animation mx-auto text-center bg-[#000]/25 outline-black mt-[30px] rounded-md placeholder:text-white text-[20px]  text-white px-[15px] py-[15px]"></textarea>
+      </div>
+      <!--submit-->
+      <input type="submit" value="Надіслати"
+        class="active:cursor-wait animate-bounce border block w-[150px] h-[40px] text-[20px] mx-auto mt-[30px] hover:cursor-pointer hover:bg-[#000]/25 hover:text-white rounded-md" />
+    </div>
+  </form>
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+
 </html>
