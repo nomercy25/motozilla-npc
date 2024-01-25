@@ -16,27 +16,8 @@
       <a class="logo animate-pulse flex justify-center items-center pt-[25px]" href="https://motozilla.com.ua/"><img 
         class="w-[48px] h-[48px]" src="img/favicon.svg" alt=""><span class="ml-[10px] text-[28px]">
           MotoZilla</span></a>
-      <div class="flex justify-center items-center mt-[20px] text-[28px]">Ваше імʼя</div>  
-        <input type="text" name="name" required autofocus autocomplete="off"  minlength="2" maxlength="20" 
-          title="Як до Вас звертатись?" class="mx-auto mt-[20px] h-[40px] w-[275px] pl-[10px] rounded-md 
-          placeholder:text-white text-white bg-[#000]/25 focus:rounded-md text-[20px] 
-          placeholder:text-[20px]" placeholder="Введіть імʼя"/>
-            <hr class="mt-[20px]">
-            <div class="flex justify-center items-center mt-[20px] text-[28px]">Ваш E-Mail</div>
-            <h2 class="flex justify-center items-center mt-[20px] text-[28px]"></h2>
-            
-        <input type="text" name="email" placeholder="Ваш E-Mail" required autocomplete="off" maxlength="40"
-          title="Ми напишемо на цю пошту" class=" mx-auto w-[275px] h-[40px] pl-[10px] rounded-md
-           placeholder:text-white text-white bg-[#000]/25 focus:rounded-md text-[20px]"
-          placeholder="Введіть E-Mail"/>
-          <hr class="mt-[20px]">
-          <div class="flex justify-center items-center mt-[20px] text-[28px]">Ваш телефон</div>
-        <input type="text" name="phone" placeholder="+380" oninput="updatePhoneNumber(this)" required autocomplete="off" minlength="10" maxlength="13"
-          title="Ми зателефонуємо за цим номером" class=" mx-auto mt-[20px] w-[275px] h-[40px] pl-[10px] rounded-md placeholder:text-white text-white bg-[#000]/25 focus:rounded-md text-[20px] placeholder:text-[20px]"/>
-          <hr class="mt-[20px]">
           <div class="question text-[26px] mt-[20px] block text-center placeholder:text-[20px]  px-[15px]">Яка ймовірність того, що Ви
             порекомендуєте нас друзям або колегам?</div>
-            <p class="flex flex-col items-center text-[20px] text-red-500 mt-[40px]">Оцініть від 1 до 10</p>
               <div class="rate-row flex flex-col lg:flex-row items-center lg:justify-between text-[22px] lg:text-[18px] mt-[40px] px-[30px]">
               <p class="">1 - не рекомендую</p>
               <p class="mt-[5px] lg:mt-[0px]">10 - точно порекомендую</p>
@@ -88,8 +69,6 @@
             </div>
           </div>
         <!---->
-              <div class="mt-[20px] px-[30px] text-[24px] lg:text-[22px] text-center text-red-500">
-                <sub>* Якщо оцінка менше 7 - напишіть, що ми могли б покращити для Вас</sub></div>
                 <div class="comment-block flex justify-center px-[30px]">
                 <textarea
           name="message"
@@ -100,10 +79,6 @@
           placeholder="Ваш коментар"
           title="" class="element-animation mx-auto text-center bg-[#000]/25 outline-black mt-[30px] rounded-md placeholder:text-white text-[20px]  text-white px-[15px] py-[15px]"></textarea>
           </div>
-        <div class="check-row flex justify-center items-center mt-[20px] px-[30px]">
-        <input type="checkbox" name="rule" id="rule" class="w-[30px] h-[30px] lg:w-[25px] lg:h-[25px]" value="Згоден / Згодна" required />
-        <label for="rule" class="ml-[10px] text-[20px] lg:text-[24px]">Згодні на обробку даних</label>
-        </div>
         <!--submit-->
         <input type="submit" value="Надіслати" class="active:cursor-wait animate-bounce border block w-[150px] h-[40px] text-[20px] mx-auto mt-[30px] hover:cursor-pointer hover:bg-[#000]/25 hover:text-white rounded-md" />
       </div>
