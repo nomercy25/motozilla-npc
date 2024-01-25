@@ -1,7 +1,7 @@
  // в эту константу помещаем URL развёрнутого веб-приложения Google Apps Script
       // ВНИМАНИЕ! Это должен быть адрес ВАШЕГО РАЗВЕРНУТОГО ПРИЛОЖЕНИЯ
       // ТЕКУЩИЙ URL_APP приведён для примера
-      const URL_APP =     "https://script.google.com/macros/s/AKfycbwKoDndAuyVd8q_pZ4KZuxiSU1cc_SbdzoBJuoHpOiY0I_jKWjOIgiwoZXg0dp_CAeNEA/exec";
+      const URL_APP =     "https://script.google.com/macros/s/AKfycbxkGoaMcFb0HNuRM0pLVnBu_o6ZbKQnV6-87u0FENBkkvwpPJm6O2FRKEMyUZZu1HOpnA/exec";
 
       // находим форму в документе
       const form = document.querySelector("#form");
@@ -30,7 +30,7 @@
         const phone = document.querySelector("[name=phone]");
         const message = document.querySelector("[name=message]");
         const rule = document.querySelector("[name=rule]");
-        const question = document.querySelector("[name=question");
+        const question = document.querySelector("[name=question]:checked");
 
 
         // собираем данные из элементов формы
@@ -42,6 +42,7 @@
           rule: rule.value,
           question: question.value,
         };
+        console.log(details);
 
         // если поля не заполнены - прекращаем обработку
         if (!isFilled(details)) return;
@@ -78,9 +79,6 @@
             question.value = '';
            alert('Дякуємо, Вас буде перенаправлено до нашого сайту через 5 секунд')
 
-           setTimeout(function() {
-            window.location.href = 'https://motozilla.com.ua'; // Замените 'https://example.com' на ваш желаемый URL
-        }, 5000);
     }
          if( result.type === 'error' ) {            
            alert(`Помилка( ${result.errors}`)
