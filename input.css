@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+input:focus {
+  outline-color: black;
+}
+
 .element-animation {
   margin: 30px auto;
   font-size: 20px;

@@ -578,22 +578,6 @@ video {
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.top-0 {
-  top: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -607,10 +591,6 @@ video {
   margin-left: 10px;
 }
 
-.mt-\[10px\] {
-  margin-top: 10px;
-}
-
 .mt-\[20px\] {
   margin-top: 20px;
 }
@@ -619,16 +599,12 @@ video {
   margin-top: 30px;
 }
 
-.mt-\[5px\] {
-  margin-top: 5px;
-}
-
-.mt-\[50px\] {
-  margin-top: 50px;
-}
-
 .mt-\[40px\] {
   margin-top: 40px;
+}
+
+.mt-\[5px\] {
+  margin-top: 5px;
 }
 
 .block {
@@ -681,10 +657,6 @@ video {
 
 .max-w-2xl {
   max-width: 42rem;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @keyframes bounce {
@@ -793,10 +765,6 @@ video {
   font-family: Inter;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
-}
-
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -805,16 +773,16 @@ video {
   font-size: 22px;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
 .text-\[26px\] {
   font-size: 26px;
 }
 
 .text-\[28px\] {
   font-size: 28px;
-}
-
-.text-\[24px\] {
-  font-size: 24px;
 }
 
 .text-red-500 {
@@ -930,15 +898,11 @@ input:focus {
     font-size: 18px;
   }
 
-  .lg\:text-\[20px\] {
-    font-size: 20px;
+  .lg\:text-\[22px\] {
+    font-size: 22px;
   }
 
   .lg\:text-\[24px\] {
     font-size: 24px;
-  }
-
-  .lg\:text-\[22px\] {
-    font-size: 22px;
   }
 }
